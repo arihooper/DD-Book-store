@@ -1,8 +1,14 @@
 import React from "react";
+import Nav from "./components/Nav";
+import Banner from "./components/Banner";
 
-function App(){
-  return<div>Was Up yoo, You Will Get Diff Books In Here!
-
-  </div>
+function App() {
+  return (
+    <>
+     <Nav />
+     <Banner />
+    </>
+  );
 }
+
 export default App;
