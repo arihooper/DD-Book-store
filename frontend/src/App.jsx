@@ -1,15 +1,23 @@
 import React from "react";
-import Nav from "./components/Nav";
-import Banner from "./components/Banner";
-import Footer from "./components/Footer"
+import Home from "./home/Home";
+import Courses from "./courses/Courses";
+import { Route, Routes } from "react-router-dom";
+import Signup from "./components/Signup";
+
+
 
 
 function App() {
   return (
     <>
-      <Nav />
-      <Banner />
-      <Footer />
+     { /*<Home />
+      <Course /> */}
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/course" element={<Courses />} /> 
+        <Route path="/signup" element={<Signup />} /> 
+      </Routes>
+     
     </>
   );
 }

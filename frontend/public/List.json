@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Don't Believe Everything You Think",
+        "author": "Joseph Nguyen",
+        "title": "Learn how to overcome anxiety, self-doubt & self-sabotage without needing to rely on motivation or willpower.",
+        "category": "Psychological",
+        "image": "https://book2action-5d2aff0.divio-media.net/filer_public/d4/85/d485c260-6e2f-43af-8b2b-e09326376161/dont_believe_everything.png"
+    },
+    {
+        "id": 2,
+        "name": "The Happiness Hypothesis: Finding Modern Truth in Ancient Wisdom",
+        "author": "Jonathan Haidt",
+        "title": "Ancient Secrets to Modern Happiness: A Journey with Jonathan Haidt.",
+        "category": "Psychological",
+        "image": "https://th.bing.com/th/id/OIP.SHsja-pZKd_Haf4_W8KyGgAAAA?rs=1&pid=ImgDetMain"
+    },
+    {
+        "id": 3,
+        "name": "Upstream: How to Solve Problems Before They Happen",
+        "author": "Dan Heath",
+        "title": "Dan Heath’s Upstream is his solution to breaking that cycle of reaction and starting to prevent problems before they start.",
+        "category": "Psychological",
+        "image": "https://m.media-amazon.com/images/I/41r0m91urOL._SL500_.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Python Crash Course",
+        "author": "Eric Matthes",
+        "title": "A Hands-on Project Based For Python.",
+        "category": "Programming",
+        "image": "https://th.bing.com/th/id/OIP.AJDjROhYSz126WL_Tnw-AwHaJy?rs=1&pid=ImgDetMain"
+    },
+    {
+        "id": 5,
+        "name": "Effective Java",
+        "author": "Joshua Bloch",
+        "title": "Good Book For Java.",
+        "category": "Programming",
+        "image": "https://i4.books-express.ro/be/9780134685991/effective-java.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Compilers: Principles, Techniques, and Tools (Second Edition)",
+        "author": "Alfred V. Aho, Monica S. Lam",
+        "title": "Amazing Book To Master How Computer Compile Codes.",
+        "category": "Programming",
+        "image": "https://th.bing.com/th/id/OIP._NB4dtiWBikce9j4RKVVywHaIp?rs=1&pid=ImgDetMain"
+    },
+    {
+        "id": 7,
+        "name": "The Alchemist",
+        "author": "Paulo Coelho",
+        "title": "Combining magic, mysticism, wisdom, and wonder into an inspiring tale of self-discovery.",
+        "category": "Fables",
+        "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1654371463i/18144590.jpg"
+    },
+    {
+        "id": 8,
+        "name": "The Tortoise & the Hare",
+        "author": "Jerry Pinkney",
+        "title": "The fable tells of a race between a speedy hare and a slow tortoise.",
+        "category": "Fables",
+        "image": "https://th.bing.com/th/id/OIP.ZkRmpEoEoHoMMM9UiwPA2wHaHa?rs=1&pid=ImgDetMain"
+    },
+    {
+        "id": 9,
+        "name": "The Wolf, the Duck, and the Mouse",
+        "author": "Mac Barnett, Jon Klassen",
+        "title": "This is a story about a mouse, and how he got swallowed up by a wolf, and who he met down in its belly, and what happened after that.",
+        "category": "Fables",
+        "image": "https://th.bing.com/th/id/OIP.cBJGbYWCQG6td2qh2UkaZwHaHa?rs=1&pid=ImgDetMain"
+    }
+]
