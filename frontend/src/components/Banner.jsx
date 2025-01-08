@@ -14,6 +14,7 @@ function Banner() {
         <div className="w-full md:w-1/2 space-y-12 text-white">
           <h2 className="text-2xl md:text-4xl font-bold animate-bounce">
             Hello, Welcome To DD BookStore To Read and Learn New Things
+            Signup To Get Our Courses 
           </h2>
           <p className="text-lg md:text-xl">
             Learning is a journey, not a destination. Every new piece of knowledge you gain is a building block to your future success.

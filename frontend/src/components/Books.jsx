@@ -1,12 +1,28 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react'; // Import useEffect here
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import axios from "axios";
 
-import List from "../../public/List.json";  // book data
-import BookCard from './bookcard';         // BookCard component
+import BookCard from './bookcard'; // BookCard component
 
 function Books() {
+    const [book, setBook] = useState([]); // Initialize state for books
+
+    useEffect(() => {
+        const getBook = async () => {
+            try {
+                const res = await axios.get("http://localhost:4001/book"); // Ensure the port matches your server
+                
+                setBook(res.data.filter((data) => data.category === "Programming"));
+                console.log(res.data);
+            } catch (error) {
+                console.log(error);
+            }
+        };
+        getBook(); // Call the function to fetch books
+    }, []);
+
     // Slider settings
     const settings = {
         dots: false,  // Disable dots navigation
@@ -98,7 +114,7 @@ function Books() {
             <div className="max-w-screen-2xl container mx-auto md:px-20 px-4">
                 <div>
                     <h3 className="font-semibold text-xl pb-2 text-black">You Must Read Books!</h3>
-                    <p className="mt-2 item-center justify-center text-center text-black">
+                    <p className="mt-2 item-center justify -center text-center text-black">
                         Hey Friend, remember that every book you read is a new adventure waiting to be discovered.
                         Each page holds the power to expand your mind, spark your imagination, and unlock endless
                         possibilities. Dive into the world of books, and you'll find yourself growing wiser, more
@@ -110,12 +126,12 @@ function Books() {
 
             {/* Slider component */}
             <div className="max-w-screen-2xl container mx-auto md:px-20 px-4">
-            <div style={{ position: 'relative' }}>
-                <Slider {...settings}>
-                    {List.map((item) => (
-                        <BookCard item={item} key={item.id} />
-                    ))}
-                </Slider>
+                <div style={{ position: 'relative' }}>
+                    <Slider {...settings}>
+                        {book.map((item) => (
+                            <BookCard item={item} key={item.id} />
+                        ))}
+                    </Slider>
                 </div>
             </div>
 

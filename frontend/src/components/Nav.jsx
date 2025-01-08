@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Login from "./Login";
 import { Link } from "react-router-dom"; // Import Link for navigation
-
+import { useAuth} from "../context/AuthProvider";
+import Logout from "./Logout";
 function Nav() {
+  const [authUser, setAuthUser]=useAuth()
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
   const element = document.documentElement;
 
@@ -37,10 +39,10 @@ function Nav() {
         <Link to="/course" className="hover:text-blue-300">Course</Link>
       </li>
       <li>
-        <Link to="#" className="hover:text-blue-300">Contact</Link>
+      <Link to="/contact" className="hover:text-blue-300">Contact</Link>
       </li>
       <li>
-        <Link to="#" className="hover:text-blue-300">About Us</Link>
+      <Link to="/about" className="hover:text-blue-300">About Us</Link>
       </li>
     </>
   );
@@ -112,6 +114,9 @@ function Nav() {
             </svg>
           </label>
 
+          {
+            authUser? (<Logout/> ) : (
+          
           <div className="">
             <a
               className="bg-black text-white px-3 py-2 rounded-md hover:bg-slate-600 duration-300 cursor-pointer"
@@ -121,6 +126,7 @@ function Nav() {
             </a>
             <Login />
           </div>
+            )}
         </div>
       </div>
     </div>
